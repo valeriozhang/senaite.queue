@@ -1,6 +1,7 @@
 include LICENSE
 include *.rst
 include *.md
+recursive-include docs *
 exclude MANIFEST.in
 recursive-exclude static *
 recursive-include src/senaite/queue *
