@@ -20,7 +20,7 @@
 
 from setuptools import setup, find_packages
 
-version = "1.0.3rc7"
+version = "1.0.3rc8"
 
 setup(
     name="valer.queue",
