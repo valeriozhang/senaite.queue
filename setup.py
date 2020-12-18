@@ -20,12 +20,12 @@
 
 from setuptools import setup, find_packages
 
-version = "1.0.3"
+version = "1.0.3rc7"
 
 setup(
-    name="senaite.queue",
+    name="valer.queue",
     version=version,
-    description="Asynchronous tasks add-on for SENAITE",
+    description="Asynchronous tasks add-on for VALER LIMS",
     long_description=open("README.rst").read() + "\n" +
     open("docs/release_notes.rst").read() + "\n" +
     open("docs/installation.rst").read() + "\n" +
@@ -38,10 +38,10 @@ setup(
         "Programming Language :: Python",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
-    keywords=['senaite', 'lims', 'opensource'],
-    author="RIDING BYTES & NARALABS",
-    author_email="senaite@senaite.com",
-    url="https://github.com/senaite/senaite.queue",
+    keywords=['senaite', 'lims', 'opensource','valer'],
+    author="Valer Group LLC",
+    author_email="valerio.zhang@valer.us",
+    url="https://github.com/valeriozhang/senaite.queue",
     license="GPLv2",
     packages=find_packages("src", exclude=["ez_setup"]),
     package_dir={"": "src"},
@@ -51,9 +51,8 @@ setup(
     install_requires=[
         "cryptography",
         "setuptools",
-        "senaite.jsonapi",
-        "senaite.lims>=1.3.4",
-        "senaite.lims<2.0.0",
+        "valer.jsonapi==1.2.3rc7",
+        "valer.lims==1.3.4rc7",
         "requests",
     ],
     extras_require={
