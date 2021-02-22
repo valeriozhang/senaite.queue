@@ -20,7 +20,7 @@
 
 from setuptools import setup, find_packages
 
-version = "1.0.3rc10"
+version = "1.0.3rc11"
 
 setup(
     name="valer.queue",
@@ -51,8 +51,8 @@ setup(
     install_requires=[
         "cryptography",
         "setuptools",
-        "valer.jsonapi==1.2.3rc10",
-        "valer.lims==1.3.4rc10",
+        "valer.jsonapi>=1.2.3rc11",
+        "valer.lims>=1.3.4rc11",
         "requests",
     ],
     extras_require={
